@@ -1,0 +1,22 @@
+.calculator {
+    display: grid;
+    grid-template-areas:
+        "display display display display"
+        "keys keys keys keys"
+        "keys keys keys keys"
+        "keys keys keys keys"
+        "keys keys keys keys";
+    gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10vh repeat(4, 1fr);
+    height: 99vh;
+    width: 99vw;
+    .display {
+        grid-area: display;
+        display: flex;
+        justify-items: end;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+    }
+}

@@ -1,10 +1,11 @@
 import React from 'react';
+import './calculator.scss';
 
 class Calculator extends React.Component {
     render() {
         return (
-        <div>
-            <p>Here we gonna show the value</p>
+        <div className="calculator">
+            <span className="display">Here we gonna show the value</span>
             <button>1</button>
             <button>2</button>
             <button>3</button>
